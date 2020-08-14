@@ -1,0 +1,15 @@
+11.08.2020
+error:
+
+fs.readDir('./commands', (err, files) => {
+   ^
+
+TypeError: fs.readDir is not a function
+   at Object.<anonymous> (D:\Games\Chrome\app.js:
+   at Module._compile (internal/modules/cjs/loade
+   at Object.Module._extensions..js (internal/mod
+   at Module.load (internal/modules/cjs/loader.js
+   at Function.Module._load (internal/modules/cjs
+   at Function.executeUserEntryPoint [as runMain]
+(71:12)
+   at internal/main/run_main_module.js:17:47

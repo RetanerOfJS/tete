@@ -1,0 +1,77 @@
+client.on('message', message => {
+  if (!message.guild) return;
+
+  if (message.content.startsWith('!kick')) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+        member
+          .kick('Optional reason that will display in the audit logs')
+          .then(() => {
+            message.reply(`${user.tag} был кикнут администратором!`);
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+          })
+          .catch(err => {
+            message.reply('Я не могу кикнуть этого пользователя!');
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+            console.error(err);
+          });
+      } else {
+        message.reply("Этот пользователь находиться вне гильдии!");
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+      }
+    } else {
+      message.reply("Вы не указали пользователя, которого нужно кикнуть!");
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+    }
+  }
+});
+
+client.on('message', message => {
+  if (!message.guild) return;
+
+  if (message.content.startsWith('!ban')) {
+    const user = message.mentions.users.first();
+    if (user) {
+      const member = message.guild.member(user);
+      if (member) {
+        member
+          .ban({
+            reason: 'They were bad!',
+          })
+          .then(() => {
+            message.reply(`${user.tag} был забанен администратором`);
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+          })
+          .catch(err => {
+            message.reply('Я не могу забанить этого пользователя!');
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+            console.error(err);
+          });
+      } else {
+        message.reply("Этот пользователь находиться вне гильдии!");
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+      }
+    } else {
+      message.reply("Вы не указали пользователя, которого нужно забанить!");
+message.delete()
+  .then(msg => console.log(`Deleted message from ${msg.author.username}`))
+  .catch(console.error);
+    }
+  }
+});

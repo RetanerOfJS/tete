@@ -1,0 +1,20 @@
+{
+  "name": "chrome",
+  "version": "2.0.3",
+  "description": "Bot",
+  "main": "app.js",
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jocsky/PrimeGod.git"
+  },
+  "keywords": [
+    "Botyara"
+  ],
+  "author": "DesoCrew",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jocsky/PrimeGod/issues"
+  },
+  "homepage": "https://github.com/Jocsky/PrimeGod#readme"
+}
