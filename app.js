@@ -76,6 +76,7 @@ client.on('message', message => {
     const embed = new MessageEmbed()
       .setTitle('Github Repository')
       .setColor(0xffdb00)
-      .setDescription('')
+      .setDescription('https://github.com/Jocsky/PrimeGod')
+  message.channel.send(embed)
   }
 })

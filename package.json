@@ -1,17 +1,21 @@
 {
-  "name": "chrome",
-  "version": "2.0.3",
-  "description": "Bot",
+  "name": "luxury",
+  "version": "2.6.5",
+  "description": "npm",
   "main": "app.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "fs": "^0.0.1-security"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Jocsky/PrimeGod.git"
   },
-  "keywords": [
-    "Botyara"
-  ],
-  "author": "DesoCrew",
+  "author": "iFury",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Jocsky/PrimeGod/issues"
